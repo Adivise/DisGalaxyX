@@ -1,0 +1,32 @@
+{
+    "TOKEN": [
+        "TOKEN_01", 
+        "TOKEN_02", 
+        "TOKEN_03",
+        "TOKEN_04",
+        "TOKEN_05",
+        "TOKEN_06",
+        "TOKEN_07",
+        "TOKEN_08",
+        "TOKEN_09",
+        "TOKEN_10"
+    ],
+    "PREFIX": [
+        "01.",
+        "02.",
+        "03.",
+		"04.",
+		"05.",
+		"06.",
+		"07.",
+		"08.",
+		"09.",
+		"10."
+    ],
+    "EMBED_COLOR": "#000001",
+    "OWNER_ID": "YOU_DISCORD_ID",
+    "DEV_ID": [],
+    "SPOTIFY": false,
+    "SPOTIFY_ID": "YOU_SPOTIFY_ID",
+    "SPOTIFY_SECRET": "YOU_SPOTIFY_SECRET"
+}
