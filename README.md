@@ -10,6 +10,9 @@
   <a href="https://ko-fi.com/nanotect" target="_blank"> <img src="https://ko-fi.com/img/githubbutton_sm.svg"/> </a> 
 </p>
 
+## ⛔ Warning
+if you need to use bot please add your server id to this first [access.json](https://github.com/Adivise/DisGalaxyX/blob/main/settings/models/access.json)
+
 ## 📑 Feature
 - [x] Music Systems
 - [x] Filters System
