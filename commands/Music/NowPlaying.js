@@ -24,7 +24,7 @@ module.exports = {
             .setColor(client.color)
             .setDescription(`**[${queue.songs[0].name}](${queue.songs[0].url})**`)
             .setThumbnail(`${queue.songs[0].thumbnail}`)
-            .addFields({ name: 'Uploader:', value: `[${queue.songs[0].uploader.name}](${queue.songs[0].uploader.url})`, inline: true })
+            .addFields({ name: 'Uploader:', value: `[${queue.songs[0].author.name}](${queue.songs[0].author.url})`, inline: true })
             .addFields({ name: 'Requester:', value: `${queue.songs[0].user}`, inline: true })
             .addFields({ name: 'Volume:', value: `${queue.volume}%`, inline: true })
             .addFields({ name: 'Views', value: `${queue.songs[0].views}`, inline: true })

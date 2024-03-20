@@ -131,7 +131,7 @@ function disspace(nowQueue, nowTrack) {
     .setThumbnail(nowTrack.thumbnail)
     .setColor('#000001')
     .setDescription(`**[${nowTrack.name}](${nowTrack.url})**`)
-    .addFields({ name: `Uploader:`, value: `**[${nowTrack.uploader.name}](${nowTrack.uploader.url})**`, inline: true })
+    .addFields({ name: `Uploader:`, value: `**[${nowTrack.author.name}](${nowTrack.author.url})**`, inline: true })
     .addFields({ name: `Requester:`, value: `${nowTrack.user}`, inline: true })
     .addFields({ name: `Current Volume:`, value: `${nowQueue.volume}%`, inline: true })
     .addFields({ name: `Filters:`, value: `${nowQueue.filters.names.join(", ") || "Normal"}`, inline: true })

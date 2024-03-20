@@ -72,7 +72,7 @@ module.exports = {
         const res = await ytsr(string, { safeSearch: true, limit: 5 });
 
         let index = 1;
-        const result = res.items.slice(0, 5).map(x => `**(${index++}.) [${x.name}](${x.url})** Uploader: \`${x.uploader.name}\``).join("\n")
+        const result = res.items.slice(0, 5).map(x => `**(${index++}.) [${x.name}](${x.url})** Uploader: \`${x.x.author.name}\``).join("\n")
 
         const embed = new EmbedBuilder()
             .setAuthor({ name: `Song Selection...`, iconURL: message.guild.iconURL({ dynamic: true }) })
