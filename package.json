@@ -1,6 +1,6 @@
 {
   "name": "disgalaxyx",
-  "version": "1.0.1",
+  "version": "2.0.0b",
   "description": "✈ Join Discord: https://discord.gg/SNG3dh3MbR",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@discordjs/voice": "^0.16.1",
-    "@distube/deezer": "^1.0.0",
+    "@distube/deezer": "^1.1.0",
     "@distube/soundcloud": "^1.3.3",
     "@distube/spotify": "^1.5.2",
     "@distube/ytsr": "^2.0.0",
@@ -24,8 +24,5 @@
     "lyrics-finder": "^21.7.0",
     "opusscript": "^0.0.8",
     "st.db": "^5.1.4"
-  },
-  "devDependencies": {
-    "node": "^17.0.1"
   }
 }

@@ -50,7 +50,7 @@ for (let i = 0; i < TOKEN.length ; i++) {
     });
 
     ["aliases", "commands"].forEach(x => client[x] = new Collection());
-    ["loadCommands", "loadEvents", "loadDistube"].forEach(x => require(`./handlers/${x}`)(client));
+    ["loadCommands", "loadEvents", "loadPlayer", "loadDatabase"].forEach(x => require(`./handlers/${x}`)(client));
 
     client.login(client.token);
 }

@@ -1,8 +1,16 @@
 const { PermissionsBitField, EmbedBuilder } = require("discord.js");
 const { Database } = require("st.db");
 
+const GSetup = new Database("./settings/models/setup.json", { databaseInObject: true });
+
 module.exports = async (client, message) => { 
     if(message.author.bot || message.channel.type === "dm") return;
+
+    await client.createExSetup(message);
+
+    // check enable
+    const data = await GSetup.get(`${message.guild.id}_${client.user.id}`);
+    if (data.setup_enable === true) return;
 
     const PREFIX = client.prefix;
 

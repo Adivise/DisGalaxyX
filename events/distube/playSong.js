@@ -1,13 +1,19 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
 const { Database } = require("st.db");
 
-const db = new Database(`./settings/models/control.json`, { databaseInObject: true });
+const GControl = new Database(`./settings/models/control.json`, { databaseInObject: true });
+const GSetup = new Database("./settings/models/setup.json", { databaseInObject: true });
 
 module.exports = async (client, queue, track) => {
+	await client.UpdateQueueMsg(queue);
+  
+	const db = await GSetup.get(`${queue.textChannel.guild.id}_${client.user.id}`);
+	if (db.setup_enable === true) return;
+
 	var newQueue = client.distube.getQueue(queue.id)
 	var data = disspace(newQueue, track)
 
-	const database = await db.get(queue.id);
+	const database = await GControl.get(queue.id);
 	if (database === true) {
 		var nowplay = await queue.textChannel.send(data);
 
