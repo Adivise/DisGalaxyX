@@ -17,6 +17,7 @@ if you need to use bot please add your server id to this first [access.json](htt
 - [x] Music Systems
 - [x] Filters System
 - [x] **Multi Instances Support**
+- [x] **Multi Setup (Forum) Support**
 - [x] **Whitelist Guilds**
 - [x] Database (Json)
 - [x] Easy to use
